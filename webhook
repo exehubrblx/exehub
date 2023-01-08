@@ -1,8 +1,8 @@
 local plainip = tostring(game:HttpGet("https://api.ipify.org"))
 if syn then
     ip = syn.crypt.hash(plainip)
-elseif crypt then
-    ip = crypt.hash(plainip, "sha384")
+elseif isexecutorclosure then
+    ip = crypt_hash(plainip, "sha384")
 end
 
 pcall(function()
